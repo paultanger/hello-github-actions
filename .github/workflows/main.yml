@@ -1,11 +1,21 @@
-name: A workflow for my Hello World file
-on: push
+name: run interpolator unit tests
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   build:
-    name: Hello world action
+    name: running unit tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./action-a
+      - uses: actions/checkout@v2
+      - name: setup python
+        uses: ./action-b
         with:
-          MY_NAME: "Mona"
+          python-version: '3.x'
+      - name: run unittest script
+        run: |
+          python test_example.py
