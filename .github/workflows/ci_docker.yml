@@ -7,4 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: build docker and use it
-      - uses: ./action-c
+        uses: ./action-c
