@@ -1,7 +1,7 @@
 FROM python:3
 
 # ADD entrypoint.sh entrypoint.sh
-COPY . .
+COPY ../* .
 RUN ls
 # RUN python test_example.py
 # RUN chmod +x entrypoint.sh
