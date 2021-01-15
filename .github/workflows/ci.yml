@@ -3,9 +3,11 @@ on:
   push:
     branches:
       - master
+      - paul
   pull_request:
     branches:
       - master
+      - paul
 jobs:
   build:
     name: running unit tests
