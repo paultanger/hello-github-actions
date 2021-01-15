@@ -17,5 +17,5 @@ jobs:
         with:
           python-version: '3.x'
       - name: run unittest script
-        run: |
+        run:
           python test_example.py
