@@ -10,6 +10,8 @@ class TestWorkflow(unittest.TestCase):
         result = sum(data)
         self.assertEqual(result, 6)
 
+    def test_to_fail(self):
+	self.assertEqual(1, 2)
 
 if __name__ == '__main__':
     unittest.main()
