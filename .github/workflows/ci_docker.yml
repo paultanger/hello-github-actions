@@ -5,6 +5,6 @@ jobs:
     name: running unit tests in docker
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
       - name: build docker and use it
         uses: ./action-c

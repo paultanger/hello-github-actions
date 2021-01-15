@@ -1,13 +1,5 @@
 name: run interpolator unit tests
-on:
-  push:
-    branches:
-      - master
-      - paul
-  pull_request:
-    branches:
-      - master
-      - paul
+on: [pull_request]
 jobs:
   build:
     name: running unit tests
